@@ -1,7 +1,5 @@
 package com.example.myapplication
 
-import android.content.Context
-import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
@@ -9,9 +7,7 @@ import android.hardware.SensorManager
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+
 
 class Contagem: AppCompatActivity(), SensorEventListener {
     var gyroscopeSensor: Sensor? = null
@@ -67,6 +63,5 @@ class Contagem: AppCompatActivity(), SensorEventListener {
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        // Se a precisão do sensor mudar, este método será chamado.
     }
 }
